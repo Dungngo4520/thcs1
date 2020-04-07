@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "🤐",
+  "description": "Giúp các bạn ko lo tạch THCS1 😌",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://onlinecourses.uet.vnu.edu.vn/mod/quiz/*"
+      ]
+    }
+  ]
+}
